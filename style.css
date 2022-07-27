@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+section{
+    margin-bottom: 100px;
+}
+
+.logo span{
+    font-family: 'Dancing Script', cursive;
+}
 .carousel-item::before{
     content: '';
     position: absolute;
@@ -8,4 +19,11 @@
     display: block;
     background-color:black ;
     opacity: 0.5;
+    
+}
+.work-bg{
+    background-color: #F4FAFD;
+}
+footer{
+    height: 230px;
 }

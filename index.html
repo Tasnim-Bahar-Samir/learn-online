@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- bootstrap cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- css link  -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- header -->
-    <header class="container">
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-              <a class="navbar-brand fs-1 fw-bold" href="#" >Learn.Online</a>
+        <nav class="navbar navbar-expand-lg bg-white sticky-top">
+            <div class="container">
+              <a class="navbar-brand fs-1 fw-bold logo" href="#" >Learn.<span class="text-primary">Online</span></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -23,42 +29,43 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Courses</a>
+                    <a class="nav-link" href="#course">Courses</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Deals</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " href="#">Success</a>
+                    <a class="nav-link " href="#success">Success</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link " href="#">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " href="#">Register</a>
+                    <a class="nav-link " href="#register">Register</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-
           <!-- carousel -->
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <header class="container">
+          <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
             
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/cover/cover-1.png" style="height:90vh ;" class="d-block w-100 " alt="...">
                 <div class="carousel-caption w-50 mx-auto pb-5">
                   <h1 class="fw-bold ">Get Started Digital Learning</h1>
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  <p>Welcome to one one of the best e-learning platforms of Bangladesh.Get your digital course from us.</p>
                   <button class="btn btn-primary">Get Srarted</button>
                 </div>
               </div>
               <div class="carousel-item ">
                 <img src="images/cover/cover-2.jpg" style="height:90vh ;"  class="d-block w-100 " alt="...">
                 <div class="carousel-caption w-50 mx-auto pb-5">
-                    <h1 class="fw-bold">Get Started Digital Learning</h1>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <h1 class="fw-bold">Check out our all updates.</h1>
+
+                    <p>Visit our website.Findout your dream skill.We will help wou to fulfill your dream.</p>
                     <button class="btn btn-primary">Get Srarted</button>
                 </div>
               </div>
@@ -66,7 +73,7 @@
                 <img src="images/cover/cover-3.jpg" style="height:90vh ;" class="d-block w-100 " alt="...">
                 <div class="carousel-caption w-50 mx-auto pb-5">
                     <h1 class="fw-bold">Get Started Digital Learning</h1>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p>Check out all courses . Join and learn your favourite skill.</p>
                     <button class="btn btn-primary">Get Srarted</button>
                 </div>
               </div>
@@ -80,24 +87,25 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          
     </header>
 
     <!-- main section  -->
-    <main class="container">
+    <main >
         <!-- courses  -->
-        <section class="mt-5">
+        <section id="course" class="mt-5 container ">
             <h1 class="fw-bold text-center">Discover Our Popular Courses</h1>
-            <div class="row row-cols-lg-2 mt-5 g-4">
+            <div class="row row-cols-lg-2 row-cols-md-1 row-cols-1 mt-3 g-4">
                 <div class="col ">
                     <div class="card">
                         <div class="row align-items-center ">
-                            <div class="col-lg-4">
-                                <img class="img-fluid" src="images/course/course-1.png" alt="">
+                            <div class="col-md-4 col-12">
+                                <img class="img-fluid w-100" src="images/course/course-1.png" alt="">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-md-8 col-12">
                                 <div>
                                 <h4>Fundamental Of UI/UX Design</h4>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                                <p>Join our special UI/UX Design course.</p>
                                 <h5 class="text-primary">Price : 20$</h5>
                                 </div>
                             </div>
@@ -107,13 +115,13 @@
                 <div class="col">
                     <div class="card">
                         <div class="row align-items-center ">
-                            <div class="col-lg-4">
-                                <img class="img-fluid" src="images/course/course-2.png" alt="">
+                            <div class="col-md-4 col-12">
+                                <img class="img-fluid w-100" src="images/course/course-2.png" alt="">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-md-8 col-12">
                                 <div>
                                 <h4>Javascript Basic to advanced</h4>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                                <p>Join Javascript master course.It is a beginer frindly course.</p>
                                 <h5 class="text-primary">Price : 25$</h5>
                                 </div>
                             </div>
@@ -123,13 +131,13 @@
                 <div class="col">
                     <div class="card">
                         <div class="row align-items-center ">
-                            <div class="col-lg-4">
-                                <img class="img-fluid" src="images/course/course-3.png" alt="">
+                            <div class="col-md-4 col-12">
+                                <img class="img-fluid w-100" src="images/course/course-3.png" alt="">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-md-8 col-12">
                                 <div>
                                 <h4>Fullstack Web Development</h4>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                                <p>Learn Fullstack web development basic to advance.Here you can learn MERN-stack</p>
                                 <h5 class="text-primary">Price : 35$</h5>
                                 </div>
                             </div>
@@ -139,13 +147,13 @@
                 <div class="col">
                     <div class="card">
                         <div class="row align-items-center ">
-                            <div class="col-lg-4">
-                                <img class="img-fluid" src="images/course/course-4.png" alt="">
+                            <div class="col-md-4 col-12">
+                                <img class="img-fluid w-100" src="images/course/course-4.png" alt="">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-md-8 col-12">
                                 <div>
                                 <h4>Digital Marketing</h4>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                                <p>Join our advance Digital Marketing and Shopify course.</p>
                                 <h5 class="text-primary">Price : 25$</h5>
                                 </div>
                             </div>
@@ -155,13 +163,13 @@
                 <div class="col">
                     <div class="card">
                         <div class="row align-items-center ">
-                            <div class="col-lg-4">
-                                <img class="img-fluid" src="images/course/course-5.png" alt="">
+                            <div class="col-md-4 col-12">
+                                <img class="img-fluid w-100" src="images/course/course-5.png" alt="">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-md-8 col-12">
                                 <div>
                                 <h4>Photography Basic Rules</h4>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                                <p>Learn all about Photography.And turn your fashion into career.</p>
                                 <h5 class="text-primary">Price : 30$</h5>
                                 </div>
                             </div>
@@ -171,13 +179,13 @@
                 <div class="col">
                     <div class="card">
                         <div class="row align-items-center ">
-                            <div class="col-lg-4">
-                                <img class="img-fluid" src="images/course/course-6.png" alt="">
+                            <div class="col-md-4 col-12">
+                                <img class="img-fluid w-100" src="images/course/course-6.png" alt="">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-md-8 col-12">
                                 <div>
                                 <h4>Motion Graphics</h4>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                                <p>Learn basic to advance Motion Graphics from us.</p>
                                 <h5 class="text-primary">Price : 20$</h5>
                                 </div>
                             </div>
@@ -185,9 +193,235 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center">
+                <a href="" class="btn btn-primary mt-3">See More Courses</a>
+            </div>
+        </section>
+        <!-- working section -->
+        <section class="mt-5 container">
+            <div class="row work-bg lh-lg g-0 align-items-center">
+                <div class="col-md-5 col-12">
+                    <img class="img-fluid w-100" src="images/working.png" alt="">
+                </div>
+                <div class="col-md-7 col-12 ps-3">
+                    <h1>Explore The elearning Institute</h1>
+                    <p>
+                        'Learn.Online' is one of the wellknown Online learning platform of Bangladesh.We have more than 10000 Successfull students. They are doing very well in their life.We have 100+ expert member and 50+ experienced teacher . All of them are working actively to develop the skills of our students.
+                    </p>
+                    <div class="d-flex gap-5">
+                        <div>
+                            <h2>50+</h2>
+                            <p class="text-muted">Online Course</p>
+                        </div>
+                        <div>
+                            <h2>100+</h2>
+                            <p class="text-muted">Expert Member</p>
+                        </div>
+                        <div>
+                            <h2>1k+</h2>
+                            <p class="text-muted">Rating Review</p>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- join section -->
+        <section id="register" class="mt-5 container">
+            <div class=" bg-primary p-5 d-flex flex-lg-row flex-column align-items-center justify-content-around w-100">
+                <div class="text-white">
+                    <h1>Ready to join?</h1>
+                    <p>Are you ready to join our courses? We are really excited to have you as a part of us!</p>
+                </div>
+                <div>
+                    <button type="button" class="btn text-primary bg-white fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</button>
+                </div>
+                
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Joined!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <h1>Yaaayyy!</h1>
+                    <p>You are inluded as a member of our learning platform.</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- success section -->
+        <section id="success" class="mt-5 container">
+            <h1 class="fw-bold">Meet Our Successfull Students</h1>
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1">
+                <div class="col mb-2">
+                    <div class="card ">
+                        <img src="images/student/student-1.png" alt="">
+                        <h4 class="px-3">Rohim Uddin</h4>
+                        <p class="px-3">Graphic Designer</p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="images/student/student-2.png" alt="">
+                        <h4 class="px-3">Jannatul Islam</h4>
+                        <p class="px-3">Digital Marketer</p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="images/student/student-3.png" alt="">
+                        <h4 class="px-3">Tashzid Mahmud</h4>
+                        <p class="px-3">Web Developer</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/student/student-4.png" alt="">
+                        <h4 class="px-3">Sumaiya Akter</h4>
+                        <p class="px-3">Motion Graphic Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="" class="btn btn-primary mt-3">View All</a>
+            </div>
+        </section>
+
+        <!-- feedback -->
+        <section class="container mt-5">
+            <h1 class="text-center">Some Students Feedback</h1>
+            <div class="row row-cols-lg-2 row-cols-1">
+                <div class="col">
+                    <div class="card">
+                        <div>
+                            <img src="images/comma.png" alt="">
+                        </div>
+                        <p>
+                            It was a great time doing the web development  course of "Learn.Online".It is a beginer friendly course.So as a beginer it was a great decision for me to join this course.Now I am working as junior full stack developer in well known it company.
+                        </p>
+                        <div class="flex align-items-center">
+                            <img src="images/student/student-5.png" alt="">
+                            <div>
+                                <h4>Jakir Hossen</h4>
+                                <p>Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- asked question -->
+        <section class="mt-5 w-75 mx-auto ">
+            <h1 class="text-center">Frequently Asked Questions</h1>
+            <p class="text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What are the differences between Flex-Box and Grid ?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Flex-Box is designed for one dimension layout -either a row or a column.
+                      And Grid is designed for the two dimension layout -row and column at the same time
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      What are the differences between Bootstrap and Tailwind ?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Bootstrap is a component based CSS framework. And Tailwind is a utility based CSS framework. In Bootstrap we can get many freemade components like carousel,modal,navbar, accoidian,card etc. On the othr side in Tailwind we wont get direct components like Bootstrap but we can get a lot of utility classes.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      What is CSS Box-MOdel ?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The CSS box model refers to how HTML elements are modeled in browser engines and how the dimensions of those HTML elements are derived from CSS properties. It is a fundamental concept for the composition of HTML webpages.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      What is Semantic Tag ?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages.
+                        Some HTML5 Semantic tags are 'Header, Nav, Aside ,Article, Footer'
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+         
+        <!-- companies -->
+        <section class="mt-5 d-lg-block d-none">
+            <h1 class="text-center fw-bold">
+                Trusted by over 800+ companies
+            </h1>
+            <div class="mt-3 d-flex justify-content-around align-items-center">
+                <div>
+                    <img class="img-fluid" src="images/company/company-1.png" alt="">
+                </div>
+                <div>
+                    <img class="img-fluid" src="images/company/company-2.png" alt="">
+                </div>
+                <div>
+                    <img class="img-fluid" src="images/company/company-3.png" alt="">
+                </div>
+                <div>
+                    <img class="img-fluid" src="images/company/company-4.png" alt="">
+                </div>
+                <div>
+                    <img class="img-fluid" src="images/company/company-5.png" alt="">
+                </div>
+                <div>
+                    <img class="img-fluid" src="images/company/company-6.png" alt="">
+                </div>
+            </div>
         </section>
     </main>
-
+    <footer class="bg-dark text-white mt-5 d-flex align-items-center justify-content-center text-center">
+        <div>
+            <h2 class="logo">Learn.<span class="text-primary">Online</span></h2>
+            <p>Office 41, Zawaya Buildin, Ghala Muscat,<br> 
+                Sultanate of Oman <br> Privacy Ploicy  |   Terms of use</p>
+            <div class="d-flex gap-2 justify-content-center fs-4">
+                <a href="https://www.facebook.com/profile.php?id=100045078463296" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.youtube.com/c/ProgrammingHero" target="_blank"> <i class="fa-brands fa-youtube" target="_blank"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/Tasnim-Bahar-Samir" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>   
 </body>
